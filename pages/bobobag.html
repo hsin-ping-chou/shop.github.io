@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DinoTaeng's Shop</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="../assets/css/animation.css"/>
+  <link rel="stylesheet" type="text/css" href="../assets/css/good.css"/>
+  <link rel="stylesheet" type="text/css" href="../assets/css/loginre.css"/>
+  <script type="text/javascript" src="../assets/js/wow.min.js"></script>
+  <script type="text/javascript" src="../assets/js/good.js"></script>
+  <script type="text/javascript" src="../assets/js/loginre.js"></script>
+  <link rel="stylesheet" type="text/css" href="../assets/css/mem.css"/>
+</head>
+
+<body> 
+  <div id="id_wrapper">
+  <!--LOGIN子遮罩-->
+  <div id="main">
+    <div id="fullbg"></div>
+    <div id="dialog">
+      <p class="close">
+        <a href="#" rel="external nofollow" onclick="closeBg();">X</a>
+      </p>
+      <div class="tableinner">
+        <div class="logintitle">Login</div>
+        <form action="#">
+          <div class="logininput">
+            <input id="email-index" type="mail" name="emailtext" required="required" placeholder="Email Address..."/><br><br>
+            <input id="password-index" type="password" name="" required="required" placeholder="Password..."/>
+          </div>
+          <div  class="join">
+             <a class="j" href="#" rel="external nofollow" onclick="show();">Registered</a>
+          </div>
+          <div class="sure">
+            <input type="submit" value="Login" name="login-submit">
+          </div>
+        </form> 
+      </div>
+    </div>
+  </div>
+  <!--LOGIN子遮罩-->
+
+  <!--Registered子遮罩-->
+  <div id="main">
+    <div id="fullbg"></div>
+    <div id="dialog2">
+      <p class="close">
+        <a href="#" rel="external nofollow" onclick="closeBg();">X</a>
+      </p>
+      <div class="tableinner">
+        <div class="retitle">Registered</div>
+        <form action="#">
+          <div class="reinput">
+            <input id="name-re" type="mail" name="namere" required="required" placeholder="Name..."/><br><br>
+            <input id="bir-re" type="date" name="birre" required="required" placeholder="1999-12-04"/><br><br>
+            <input id="tel-re" type="tel" name="telre"  required="required" placeholder="tel...."/><br><br>
+            <input id="email-re" type="mail" name="emailre" required="required" placeholder="Email Address..."/><br><br>
+            <input id="password-re" type="password" name="passwordre" required="required" placeholder="Password..."/><br><br>
+            <input id="password-re2" type="password" name="passwordre2" required="required" placeholder="Verify password..."/>
+          </div>
+          <div class="joinn">
+             <a class="jn" rel="external nofollow"  onclick="closeB();" href="#">Login</a>
+          </div>
+          <div class="bu">
+            <div class="sub">
+              <input type="reset" value="Rewrite" name="re-write"/>
+            </div>
+            <div class="res">
+              <input type="submit" value="Registered" name="re-submit">
+            </div>
+           </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--Registered子遮罩-->
+  <!--revise personal info子遮罩-->
+  <div id="main">
+    <div id="fullbg"></div>
+    <div id="dialog3">
+      <p class="close">
+        <a href="#" rel="external nofollow" onclick="closeBg();">X</a>
+      </p>
+      <div class="tableinner">
+        <div class="retitle" style="text-align: center;">Revise personal Info</div>
+        <form action="#">
+          <div class="moinput">
+            <input id="name-mo" type="mail" name="namemo" required="required" placeholder="Name..."/><br><br>
+            <input id="bir-mo" type="date" name="birmo" required="required" placeholder="1999-12-04"/><br><br>
+            <input id="tel-mo" type="tel" name="telmo" required="required" placeholder="tel...."/><br><br>
+            <input id="email-mo" type="mail" name="emailmo" required="required" placeholder="Email Address..."/><br><br>
+            <input id="password-mo" type="password" name="passwordmo" required="required" placeholder="Password..."/><br><br>
+            <input id="password-mo2" type="password" name="passwordmo2" required="required" placeholder="Verify password..."/>
+          </div>
+          <div class="bu">
+            <div class="sub">
+              <input type="reset" value="Rewrite" name="re-write"/>
+            </div>
+            <div class="res">
+              <input type="submit" value="Revise" name="re-submit">
+            </div>
+           </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--revise personal info子遮罩-->
+
+    <!--comment子遮罩-->
+  <div id="main">
+    <div id="fullbg"></div>
+    <div id="dialog4">
+      <p class="close">
+        <a href="#" rel="external nofollow" onclick="closecomment();">X</a>
+      </p>
+      <div class="tableinner">
+        <div class="retitle" style="text-align: center;">Comment</div>
+        <form>
+          <div class="mmoinput">
+            <div class="coda">
+              <input type="date" name="commentdate" required="required">
+            </div>
+
+            <div class="starr">
+              <img class="i" src="../assets/image/0.png"/ width="40" height="40">
+              <img class="i" src="../assets/image/0.png"/ width="40" height="40">
+              <img class="i" src="../assets/image/0.png"/ width="40" height="40">
+              <img class="i" src="../assets/image/0.png"/ width="40" height="40">
+              <img class="i" src="../assets/image/0.png"/ width="40" height="40">
+              <span></span>
+            </div>
+
+            <script type="text/javascript">//評價ＪＳ
+                $('.i').each(function(index){
+                  var star='../assets/image/0.png';  //普通灰色星星
+                  var starRed='../assets/image/2.png';   //黃色星星
+                  var prompt=['1顆星','2顆星','3顆星','4顆星','5顆星'];
+                  this.id=index;    
+                  $(this).on("mouseover click",function(){  //滑鼠click事件
+                    $('.i').attr('src',star);
+                    $(this).attr('src',starRed);    //设置鼠标当前所在图片为打星颜色图
+                    $(this).prevAll().attr('src',starRed);  //设置鼠标当前的前面星星图片为打星颜色图
+                    $(this).siblings('span').text(prompt[this.id]);
+                  });
+                });
+            </script>
+
+            <div class="comm">
+              <textarea wrap="hard" onFocus="if(this.value==this.defaultValue) this.value=''" onBlur="if(this.value=='') this.value=this.defaultValue"> Comment...</textarea>
+            </div>
+          </div>
+
+          <div class="ress">
+            <input type="submit" value="Submit" name="re-submit">
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--comment子遮罩-->
+
+  <div class="topcate">
+    <div class="centerareaone">
+    <div class="logo"> <!--logo-->
+      <a href="../index.html">
+        <img src="../assets/image/logo.png" width="400" height="140">
+      </a>
+    </div><!--logo end-->
+    <div class="menu"><!--最上面選單-->
+      <ul class="topcate_menu">
+        <li><a href="../pages/aboutme.html"><span class="btn btn-one" style="margin-right: 15px;">About</span></a></li>               
+        <li><a href="../pages/menu.html"><span class="btn btn-one" >Shop</span></a></li>
+        <li><a href="../pages/board.html"><span class="btn btn-one" style="width: 140px;margin-right: 5px;">Contact</span></a></li>        
+        <div class="dropdown" >
+          <button onclick="myFunction()" class="dropbtn btn btn-one">MEMBER</button>
+          <div id="myDropdown" class="dropdown-content" >
+            <a href="../pages/order.html">Order</a>
+            <a href="javascript:show2();" rel="external nofollow">Modify</a>
+          </div>
+        </div>
+     </ul>
+    </div><!--最上面選單end-->
+    <div class="lastarea"><!--登入註冊購物車區塊-->
+      <div class="loginarea">
+        <!--後端登入登出判斷，如果還沒登入出現ＬＯＧＩＮ，登入變人的圖像-->
+        <a href="javascript:showBg();" rel="external nofollow" ><font class="buzz-out-on-hover" id="login">LOGIN</font></a> &nbsp<span style="color:#23345c;">|&nbsp</span> 
+        <!--<font class="buzz-out-on-hover" style="cursor: pointer;"> LOGOUT &nbsp</font><span style="color:#23345c;">| 登出鈕 -->
+        <!--<a href="manager.html"><img class="buzz-out-on-hover" id="user" src="../assets/image/information.png" width="40" height="40"> &nbsp<span style="color:#23345c;">|</a>-->
+      </div>
+      <div class="car">
+        <a href="car.html">
+          <img class="buzz-out-on-hover" id="shoppingcar" src="../assets/image/car.png" width="30" height="30"><!--購物車鈕-->
+        </a>
+      </div>
+    </div><!--登入註冊購物車區塊end-->
+  </div>
+  </div>
+
+<div id="id_content">
+ <div class="areaone">
+    <div class="innerarea">
+      <div class="goodpic"><!--big pic-->
+        <div style="width: 570px;height: 550px; margin: auto; margin-top: 90px;">
+        <div id="BOX">
+          <img class="bigimage" src="../assets/image/bag1.png"width="570" height="550" id="BIG">
+        </div>
+        </div>
+      </div><!--big pic end-->
+      <div class="gooddetail">
+        <form action="#">
+        <div class="detailarea">
+          <h2>BOBO手提袋<small></small></h2>
+          <hr style="border-color: rgb(42, 81, 111,0.5);border-width: 5px;"></hr>
+          商品描述：<br>
+          BOBO手提袋可裝得下隨身小物品，<br>
+          外出不想帶大包包，BOBO手提袋是最佳選擇喔！<br>
+          <hr style="border-width: 2px;"></hr>
+          <p><span>價格：NT$ 250</span></p>
+          <p>產品編號：202005004</p>
+          <p>庫存量：100</p>
+          <p>已瀏覽過人數：100</p>
+          <div style="border:3px #D1E9E9 solid; height: auto;width: 100px;white-space:nowrap;">
+            <input name="minus" class="min"  type="submit" value="-"  style=" width:30px;height:42px;border:white;background-color:white;" />
+            <input name="goodnum" class="text_box" id="quantity"  type="text" value="1" style="width:25px;height: 42px; border: none;text-align: center;"  />
+            <input name="plus" class="add"  type="submit" value="+"style=" width:30px;height:42px;border:white;background-color:white;" />
+          </div>
+          <button name="shoppingcar" class="buttonone"><img src="../assets/image/carr.png" width="30" height="30">  &nbsp 加入購物車 &nbsp</button>
+          <!--如果後端button無法起作用在使用這個
+            <input name="shoppingcar" class="buttonone" value="  &nbsp 加入購物車 &nbsp"></input>
+          -->
+        </div>
+        </form>
+
+        <div class="smallpic">
+          <div id="SMALL"><!--small pic-->
+            <img style="border-radius: 20px;border:2px rgb(53, 103, 141,0.6) solid;" src="../assets/image/bag1.png" width="120" height="142" id="bag1">
+            <img style="border-radius: 20px;border:2px rgb(53, 103, 141,0.6) solid;"src="../assets/image/bag2.png" width="120" height="142" id="bag2">
+            <img style="border-radius: 20px;border:2px rgb(53, 103, 141,0.6) solid;"src="../assets/image/bag3.png" width="120" height="142" id="bag3">
+            <img style="border-radius: 20px;border:2px rgb(53, 103, 141,0.6) solid;"src="../assets/image/bag4.png" width="120" height="142" id="bag4">
+          </div><!--small pic end-->
+        </div>
+      </div> 
+    </div>
+ </div>
+ <div class="areatwo">
+  <hr style="width: 1400px;"></hr>
+  <div style="width: 100%; height: auto; margin-top: 10px;margin-bottom: 15px;">
+    <center><h3 style=" color:rgb(53, 103, 141); font-family: chalkboard;">Evaluation</h3></center>
+  </div>
+  <div class="goodstar">
+    <div class="circlearea">
+      <div class="circleinner">
+        <svg viewBox="0 0 36 36" class="circular-chart c" >
+          <path class="circle-bg"
+          d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+          />
+          <path class="circle"
+          stroke-dasharray="85, 100"
+          d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+          />  
+        </svg>
+      </div>    
+      <div class="progressarea">
+        <div style="height: auto;width:550px;margin: auto;" >
+        <h3 class="progressbar-title ">5顆星</h3>
+        <div class="progress">
+          <div class="progress-bar" style="width: 60%; background:rgb(53, 103, 141,0.5);">
+          </div>
+        </div>
+        <h3 class="progressbar-title ">4顆星</h3>
+        <div class="progress">
+          <div class="progress-bar" style="width: 60%; background:rgb(53, 103, 141,0.5);">
+          </div>
+        </div>
+        <h3 class="progressbar-title ">3顆星</h3>
+        <div class="progress">
+          <div class="progress-bar" style="width: 60%; background:rgb(53, 103, 141,0.5);">
+          </div>
+        </div>
+        <h3 class="progressbar-title ">2顆星</h3>
+        <div class="progress">
+          <div class="progress-bar" style="width: 60%; background:rgb(53, 103, 141,0.5);">
+          </div>
+        </div>
+        <h3 class="progressbar-title ">1顆星</h3>
+        <div class="progress">
+          <div class="progress-bar" style="width: 60%;background:rgb(53, 103, 141,0.5);">
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+ <div>
+
+ <div class="commentarea"><!--comment-->
+  <hr style="width: 1400px;"></hr>
+  <div style="width: 100%; height: auto; margin-top: 10px;margin-bottom: 15px;">
+    <center><h3 style=" color:rgb(53, 103, 141); font-family: chalkboard;">Comment</h3></center>
+  </div>
+
+  <div class="write">
+    <img onclick="showcomment();" src="../assets/image/document.png" width="30" height="30">
+  </div>
+  <div class="commentareatwo"><!--!!!!!!後端跑評論迴圈的地方!!!!!!-->
+    <div class="photoarea">
+      <div class="photo">
+        <img style="box-shadow: 11px 11px 11px #9D9D9D;border-radius: 110px;" src="../assets/image/commentphoto.png" width="200" height="200">
+      </div>
+    </div>
+    <div class="comment">
+      <div class="commentt">
+        <div class="date">
+          Date
+        </div>
+        <div class="word">
+          comment<br><br><br><br><br>frf<br><br><br><br><br><br><br>refrtf
+        </div>
+        <div class="star">
+          star
+        </div>
+      </div>
+    </div>
+    </div><!--!!!!!!後端跑評論迴圈的地方!!!!!!-->
+
+ </div><!--comment end-->
+</div>
+
+  <div class="footer"><!--footer-->
+   <p></p>
+   <p>Copyright © 2020 Interest Company. All rights reserved</p>
+   <p><img src="../assets/image/business.png" height="22" width="22">：No. 200, Zhongbei Rd., Zhongli Dist., Taoyuan City 320, Taiwan (R.O.C.)</p>
+   <p><img src="../assets/image/tel.png" height="20" width="20">：0910-622-373</p>
+  </div><!--footer end-->
+ 
+</div>
+<script> new WOW().init();</script>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

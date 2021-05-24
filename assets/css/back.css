@@ -1,0 +1,52 @@
+    .backlogo a{
+        text-decoration: none;
+        font-size: 25pt;
+        transform: translateX(50%);
+        display: inline-block;
+        /*background: red;*/
+        float: left;
+        padding-top: 35px;
+        height:130px;
+        color: #3D7878;
+    }
+    .backlogo a:hover{
+        color: #8EB4B4;
+    }
+    .backlastarea{
+
+      width: 500px;
+      height: 130px;
+      /*background: red;*/
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 20px;
+      padding-top: 42px;
+      letter-spacing: 2px;
+  }
+  .backcenterareaone{
+      width: 1000px; 
+      height:auto; 
+      margin: auto;
+  }
+  .backloginarea{
+      display: inline-block;
+      padding-top: 11px;
+      float: right;
+  }
+.backhotinnerbody{
+  width: 1300px;
+  height: 500px;
+  /*background: orange;*/
+  margin: auto;
+    margin-top: 100px;
+  margin-top: 20px;
+}
+.backhot{
+  width: 1040px;
+  height: 500px;
+  /* background: red;*/
+  margin: auto;
+  margin-top: 100px;
+  padding-top: 40px;
+  padding-left: 20px;
+}

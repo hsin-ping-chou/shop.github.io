@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DinoTaeng's Shop</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../assets/css/car.css" />
+    <script type="text/javascript" src="../assets/js/wow.min.js"></script>
+    <script type="text/javascript" src="../assets/js/car.js"></script>
+  <link rel="stylesheet" type="text/css" href="../assets/css/loginre.css"/>
+    <link rel="stylesheet" type="text/css" href="../assets/css/mem.css"/>
+    <script type="text/javascript" src="../assets/js/loginre.js"></script>
+</head>
+<body>
+<div id="id_wrapper">
+  <!--LOGIN子遮罩-->
+  <div id="main">
+    <div id="fullbg"></div>
+    <div id="dialog">
+      <p class="close">
+        <a href="#" rel="external nofollow" onclick="closeBg();">X</a>
+      </p>
+      <div class="tableinner">
+        <div class="logintitle">Login</div>
+        <form>
+          <div class="logininput">
+            <input id="email-index" type="mail" name="emailtext" required="required" placeholder="Email Address..."/><br><br>
+            <input id="password-index" type="password" name="" required="required" placeholder="Password..."/>
+          </div>
+          <div  class="join">
+             <a class="j" href="#" rel="external nofollow" onclick="show();">Registered</a>
+          </div>
+          <div class="sure">
+            <input type="submit" value="Login" name="login-submit">
+          </div>
+        </form> 
+      </div>
+    </div>
+  </div>
+  <!--LOGIN子遮罩-->
+
+  <!--Registered子遮罩-->
+  <div id="main">
+    <div id="fullbg"></div>
+    <div id="dialog2">
+      <p class="close">
+        <a href="#" rel="external nofollow" onclick="closeBg();">X</a>
+      </p>
+      <div class="tableinner">
+        <div class="retitle">Registered</div>
+        <form>
+          <div class="reinput">
+            <input id="name-re" type="mail" name="namere" required="required" placeholder="Name..."/><br><br>
+            <input id="bir-re" type="date" name="birre" required="required" placeholder="1999-12-04"/><br><br>
+            <input id="tel-re" type="tel" name="telre" required="required" placeholder="tel...."/><br><br>
+            <input id="email-re" type="mail" name="emailre" required="required" placeholder="Email Address..."/><br><br>
+            <input id="password-re" type="password" name="passwordre" required="required" placeholder="Password..."/><br><br>
+            <input id="password-re2" type="password" name="passwordre2" required="required" placeholder="Verify password..."/>
+          </div>
+          <div class="joinn">
+             <a class="jn" rel="external nofollow"  onclick="closeB();" href="#">Login</a>
+          </div>
+          <div class="bu">
+            <div class="sub">
+              <input type="reset" value="Rewrite" name="re-write"/>
+            </div>
+            <div class="res">
+              <input type="submit" value="Registered" name="re-submit">
+            </div>
+           </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--Registered子遮罩-->
+  <!--revise personal info子遮罩-->
+    <div id="fullbg"></div>
+    <div id="dialog3">
+      <p class="close">
+        <a href="#" rel="external nofollow" onclick="closeBg();">X</a>
+      </p>
+      <div class="tableinner">
+        <div class="retitle" style="text-align: center;">Revise personal Info</div>
+        <form>
+          <div class="moinput">
+            <input id="name-mo" type="mail" name="namemo" required="required" placeholder="Name..."/><br><br>
+            <input id="bir-mo" type="date" name="birmo" required="required" placeholder="1999-12-04"/><br><br>
+            <input id="tel-mo" type="tel" name="telmo" required="required" placeholder="tel...."/><br><br>
+            <input id="email-mo" type="mail" name="emailmo" required="required" placeholder="Email Address..."/><br><br>
+            <input id="password-mo" type="password" name="passwordmo" required="required" placeholder="Password..."/><br><br>
+            <input id="password-mo2" type="password" name="passwordmo2" required="required" placeholder="Verify password..."/>
+          </div>
+          <div class="bu">
+            <div class="sub">
+              <input type="reset" value="Rewrite" name="re-write"/>
+            </div>
+            <div class="res">
+              <input type="submit" value="Revise" name="re-submit">
+            </div>
+           </div>
+        </form>
+      </div>
+    </div>
+  <!--revise personal info子遮罩-->
+
+ <div class="topcate">
+    <div class="centerareaone">
+    <div class="logo"> <!--logo-->
+      <a href="../index.html">
+        <img src="../assets/image/logo.png" width="400" height="140">
+      </a>
+    </div><!--logo end-->
+    <div class="menu"><!--最上面選單-->
+      <ul class="topcate_menu">
+        <li><a href="../pages/aboutme.html"><span class="btn btn-one" style="margin-right: 15px;">About</span></a></li>               
+        <li><a href="../pages/menu.html"><span class="btn btn-one" >Shop</span></a></li>
+        <li><a href="../pages/board.html"><span class="btn btn-one" style="width: 140px;margin-right: 5px;">Contact</span></a></li>        
+        <div class="dropdown" >
+          <button onclick="myFunction()" class="dropbtn btn btn-one">MEMBER</button>
+          <div id="myDropdown" class="dropdown-content" >
+            <a href="../pages/order.html">Order</a>
+            <a href="javascript:show2();" rel="external nofollow">Modify</a>
+          </div>
+        </div>
+     </ul>
+    </div><!--最上面選單end-->
+    <div class="lastarea"><!--登入註冊購物車區塊-->
+      <div class="loginarea">
+        <!--後端登入登出判斷，如果還沒登入出現ＬＯＧＩＮ，登入變人的圖像-->
+        <a href="javascript:showBg();" rel="external nofollow" ><font class="buzz-out-on-hover" id="login">LOGIN</font></a> &nbsp<span style="color:#23345c;">|&nbsp</span> 
+        <!--<font class="buzz-out-on-hover" style="cursor: pointer;"> LOGOUT &nbsp</font><span style="color:#23345c;">| 登出鈕 -->
+        <!--<a href="manager.html"><img class="buzz-out-on-hover" id="user" src="../assets/image/information.png" width="40" height="40"> &nbsp<span style="color:#23345c;">|</a>-->
+      </div>
+      <div class="car">
+        <a href="car.html">
+          <img class="buzz-out-on-hover" id="shoppingcar" src="../assets/image/car.png" width="30" height="30"><!--購物車鈕-->
+        </a>
+      </div>
+    </div><!--登入註冊購物車區塊end-->
+  </div>
+  </div>
+
+
+<div id="id_content">
+  <div class="cararea">
+    <div class="carinner">
+        <div class="title">
+            購物車<br><sub>Shopping cart</sub>
+        </div>
+
+        <form action="#">
+          <table>
+            <tr>
+              <th id="productname-1">商品名稱</th>
+              <th id="productnum-1">數量</th>
+              <th id="productprice-1">單價</th>
+              <th id="productmoney-1">小計</th>
+              <th id="producttrash-1"></th>
+            </tr>
+            <tr>
+              <td id="productname"><img src="../assets/image/wallet1.png" width="110" height="110"> &nbsp WALLET</td> <!--商品照片-->
+              <td id="productnum"><input style="width: 50px;text-align: center;" name="many" class="num"  type="number" value="1" min="1" max="5"  /></td> <!--商品購買數量-->
+              <td id="productnsubtol">$<span id="unit">80</span></td><!--商品單價-->
+              <td id="productmoney">$<span id="subtal">0</span></td><!--小計-->
+              <td id="productdelete"><img style="cursor: pointer;" src="../assets/image/trash.png" width="35" height="35"></td><!--刪除鈕-->
+            </tr>
+            <tr>
+              <td id="productname"><img src="../assets/image/wallet1.png" width="110" height="110"> &nbsp WALLET</td> <!--商品照片-->
+              <td id="productnum"><input style="width: 50px;text-align: center;" name="many" class="num"  type="number" value="1" min="1" max="5"  /></td> <!--商品購買數量-->
+              <td id="productnsubtol">$<span id="unit">80</span></td><!--商品單價-->
+              <td id="productmoney">$<span id="subtal">0</span></td><!--小計-->
+              <td id="productdelete"><img style="cursor: pointer;" src="../assets/image/trash.png" width="35" height="35"></td><!--刪除鈕-->
+            </tr>
+            <tr>
+              <td id="productname"><img src="../assets/image/wallet1.png" width="110" height="110"> &nbsp WALLET</td> <!--商品照片-->
+              <td id="productnum"><input style="width: 50px;text-align: center;" name="many" class="num"  type="number" value="1" min="1" max="5"  /></td> <!--商品購買數量-->
+              <td id="productnsubtol">$<span id="unit">80</span></td><!--商品單價-->
+              <td id="productmoney">$<span id="subtal">0</span></td><!--小計-->
+              <td id="productdelete"><img style="cursor: pointer;" src="../assets/image/trash.png" width="35" height="35"></td><!--刪除鈕-->
+            </tr>
+          </table> 
+
+          <div id="productarea">
+            <div class="productinner">
+                <div class="option">
+                    <div class="prodivv">運送及付款方式：</div>
+                    <div class="prodiv22">
+                        <select name="transport" >
+                        　<option value="t-one">711取貨付款</option>
+                        　<option value="t-two">匯款/黑貓宅急便</option>
+                        　<option value="t-three">匯款/711取貨</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="pro">
+                    <div class="prodiv"><b>清單</b></div>
+                    <div class="prodiv2"><b>合計</b></div>
+                </div>
+                <div class="pro">
+                    <div class="prodivv">購物車商品數量：</div>
+                    <div class="prodiv22"><span id="goods_num">0</span>件</div>
+                </div>
+                <div class="pro">
+                    <div class="prodivv">小計：</div>
+                    <div class="prodiv22">$<span id="pricetal">0</span>元</div>
+                </div>
+                <div class="pro">
+                    <div class="prodivv">運費：</div>
+                    <div class="prodiv22" style="color: red;"><b>新開幕！全館免運中</b></div>
+                </div>
+                <div class="pro">
+                    <div class="prodiv"><b>總計：</b></div>
+                    <div class="prodiv2"><b>$<span id="totalprice">0</span>元</b></div>
+                </div>
+                <div class="s">
+                    <div ><input type="submit" name=""></div>
+                </div>
+            </div>
+          </div>
+        </form>
+
+
+    </div>      
+  </div>
+
+</div>
+
+    
+
+<div class="footer"><!--footer-->
+    <p>Copyright © 2020 Interest Company. All rights reserved</p>
+    <p><img src="../assets/image/business.png" height="22" width="22">：No. 200, Zhongbei Rd., Zhongli Dist., Taoyuan City 320, Taiwan (R.O.C.)</p>
+    <p><img src="../assets/image/tel.png" height="20" width="20">：0910-622-373 | <a href="#">About Us</a><p>
+</div> <!--footer end-->
+   
+
+</div>
+<script>new WOW().init();</script>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

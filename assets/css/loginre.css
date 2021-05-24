@@ -1,0 +1,436 @@
+  #fullbg {
+    background-color:gray;
+    left:0;
+    opacity:0.8;
+    position:absolute;
+    top:0;
+    z-index:300;
+    filter:alpha(opacity=80);
+    -moz-opacity:0.5;
+    -khtml-opacity:0.5;
+  }
+  #dialog {
+    background-color:rgb(220, 229, 227);
+    border:5px solid rgb(158, 183, 179);
+    height:350px;
+    left:50%;
+    margin:-250px 0 0 -200px;
+    padding:1px;
+    position:fixed !important; /* 浮動對話方塊 */
+    position:absolute;
+    top:50%;
+    width:450px;
+    z-index:500;
+    border-radius:5px;
+    display:none;
+  }
+  .bu{
+    width: 340px;
+    margin: auto;
+    height: 90px;
+   /* background: orange;*/
+  }
+  #dialog2 {
+    background-color:rgb(220, 229, 227);
+    border:5px solid rgb(158, 183, 179);
+    height:720px;
+    left:50%;
+    margin:-400px 0 0 -200px;
+    padding:1px;
+    position:fixed !important; /* 浮動對話方塊 */
+    position:absolute;
+    top:50%;
+    width:450px;
+    z-index:500;
+    border-radius:5px;
+    display:none;
+  }
+  #dialog2 p {
+    margin:0 0 12px;
+    height:24px;
+    line-height:24px;
+  }
+  #dialog2 p.close {
+    text-align:right;
+    padding-right:10px;
+  }
+  #dialog2 p.close a {
+    color:rgb(89, 114, 136);
+    text-decoration:none;
+  }
+  .retitle{
+    /*background: orange;*/
+    width: 440px;
+    height: 60px;
+    font-size: 20pt;
+    font-family: Arial Black;
+    padding-top: 5px;
+    padding-left: 7px;
+    border-bottom: 2px rgb(85, 114, 109,0.3) solid;
+    color: #5F817B;
+  }
+  .reinput{
+    width: 340px;
+    height:500px;
+    /*background: pink;*/
+    margin: auto;
+    margin-top: 30px;
+    font-size: 15pt;
+  }
+  .reinput input{
+    border:none;
+    width: 340px;
+    height: 50px;
+  }
+
+  #dialog p {
+    margin:0 0 12px;
+    height:24px;
+    line-height:24px;
+  }
+  #dialog p.close {
+    text-align:right;
+    padding-right:10px;
+  }
+  #dialog p.close a {
+    color:rgb(89, 114, 136);
+    text-decoration:none;
+    }
+  .tableinner{
+    /*background: pink;*/
+    width: 440px;
+    height: 350px;
+  }
+  .logintitle{
+    /*background: orange;*/
+    width: 440px;
+    height: 60px;
+    font-size: 20pt;
+    font-family: Arial Black;
+    padding-top: 5px;
+    padding-left: 7px;
+    border-bottom: 2px rgb(85, 114, 109,0.3) solid;
+    color: #5F817B;
+  }
+  .logininput{
+    width: 310px;
+    height:130px;
+    /*background: pink;*/
+    margin: auto;
+    margin-top: 30px;
+    font-size: 15pt;
+  }
+  .logininput input{
+    border:none;
+    width: 310px;
+    height: 50px;
+  }
+  .join{
+    padding-top: 20px;
+    width: 270px;
+    height: 60px;
+    margin: auto;
+    /*background: white;*/
+    text-align: right;
+  }
+  .sure{
+    padding-top: 4px;
+    width: 310px;
+    height: 60px;
+    margin: auto;
+    /*background: white;*/
+    text-align: center;
+  }
+  .sure input{
+    width: 70px;
+    height: 40px;
+    background: rgb(85, 114, 109,0.4);
+    border: none;
+    border-radius: 9px;
+    color: white;
+    cursor: pointer;
+  }
+  .sure input:active{
+    color:rgb(85, 114, 109);
+    font-weight: bold;
+  }
+  .join a{
+    text-decoration: none;
+    font-family: Arial Black;
+    font-size: 13pt;
+    color: rgb(85, 114, 109,0.5);
+  }
+  .j:hover{
+    color: rgb(85, 114, 109);
+  }
+  #email-index{
+    background-image: url('../image/mail-2.png');
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    padding-left: 50px;
+    background-position: 4%;
+    background:  ;
+    border-radius: 8px;
+  }
+  #password-index{
+    background-image: url('../image/password.png');
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    padding-left: 50px;
+    background-position: 4%;
+    background:  ;
+    border-radius: 8px;
+  }
+
+  #name-re{
+    background-image: url('../image/userr.png');
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    padding-left: 50px;
+    background-position: 4%;
+    background:  ;
+    border-radius: 8px;
+  }
+  #bir-re{
+    background-image: url('../image/birthday.png');
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    padding-left: 50px;
+    background-position: 4%;
+    background:  ;
+    border-radius: 8px;
+  }
+  #email-re{
+    background-image: url('../image/mail-2.png');
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    padding-left: 50px;
+    background-position: 4%;
+    background:  ;
+    border-radius: 8px;
+  }
+  #tel-re{
+    background-image: url('../image/tel.png');
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    padding-left: 50px;
+    background-position: 4%;
+    background:  ;
+    border-radius: 8px;
+  }
+  #password-re{
+    background-image: url('../image/password.png');
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    padding-left: 50px;
+    background-position: 4%;
+    background:  ;
+    border-radius: 8px;
+  }
+  #password-re2{
+    background-image: url('../image/password-2.png');
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    padding-left: 50px;
+    background-position: 4%;
+    background:  ;
+    border-radius: 8px;
+  }
+  .sub{
+    display: inline-block;
+    float: left;
+    width: 170px;
+    height: 80px;
+    /*background: green;*/
+    text-align: center;
+    padding-top: 15px;
+  }
+  .sub input{
+    width: 100px;
+    height: 40px;
+    background: rgb(85, 114, 109,0.4);
+    border: none;
+    border-radius: 9px;
+    color: white;
+    cursor: pointer;
+  }
+  .sub input:active{
+    color:rgb(85, 114, 109);
+    font-weight: bold;
+  }
+  .res{
+    padding-top: 15px;
+    display: inline-block;
+    float: right;
+    width: 170px;
+    height: 80px;
+   /* background: blue;*/
+   text-align: center;
+  }
+  .res input{
+    width: 100px;
+    height: 40px;
+    background: rgb(85, 114, 109,0.4);
+    border: none;
+    border-radius: 9px;
+    color: white;
+    cursor: pointer;
+  }
+  .res input:active{
+    color:rgb(85, 114, 109);
+    font-weight: bold;
+  }
+
+      #dialog3 {
+    background-color:rgb(220, 229, 227);
+    border:5px solid rgb(158, 183, 179);
+    height:690px;
+    left:50%;
+    margin:-400px 0 0 -200px;
+    padding:1px;
+    position:fixed !important; /* 浮動對話方塊 */
+    position:absolute;
+    top:50%;
+    width:450px;
+    z-index:500;
+    border-radius:5px;
+    display:none;
+  }
+  #dialog3 p {
+    margin:0 0 12px;
+    height:24px;
+    line-height:24px;
+  }
+  #dialog3 p.close {
+    text-align:right;
+    padding-right:10px;
+  }
+  #dialog3 p.close a {
+    color:rgb(89, 114, 136);
+    text-decoration:none;
+  }
+  .motitle{
+    /*background: orange;*/
+    width: 440px;
+    height: 60px;
+    font-size: 20pt;
+    font-family: Arial Black;
+    padding-top: 5px;
+    padding-left: 7px;
+    border-bottom: 2px rgb(85, 114, 109,0.3) solid;
+    color: #5F817B;
+  }
+  .moinput{
+    width: 340px;
+    height:470px;
+    /*background: pink;*/
+    margin: auto;
+    margin-top: 30px;
+    font-size: 15pt;
+  }
+  .moinput input{
+    border:none;
+    width: 340px;
+    height: 50px;
+  }
+ #name-mo{
+    background-image: url('../image/userr.png');
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    padding-left: 50px;
+    background-position: 4%;
+    background:  ;
+    border-radius: 8px;
+  }
+  #bir-mo{
+    background-image: url('../image/birthday.png');
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    padding-left: 50px;
+    background-position: 4%;
+    background:  ;
+    border-radius: 8px;
+  }
+  #email-mo{
+    background-image: url('../image/mail-2.png');
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    padding-left: 50px;
+    background-position: 4%;
+    background:  ;
+    border-radius: 8px;
+  }
+  #tel-mo{
+    background-image: url('../image/tel.png');
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    padding-left: 50px;
+    background-position: 4%;
+    background:  ;
+    border-radius: 8px;
+  }
+  #password-mo{
+    background-image: url('../image/password.png');
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    padding-left: 50px;
+    background-position: 4%;
+    background:  ;
+    border-radius: 8px;
+  }
+  #password-mo2{
+    background-image: url('../image/password-2.png');
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    padding-left: 50px;
+    background-position: 4%;
+    background:  ;
+    border-radius: 8px;
+  }
+  .joinn{
+    width: 270px;
+    height: 30px;
+    margin: auto;
+    /*background: white;*/
+    text-align: right;
+    text-decoration: none;
+  }  
+  .joinn a{
+    text-decoration: none;
+    font-family: Arial Black;
+    font-size: 13pt;
+    color: rgb(85, 114, 109,0.5);
+  }
+  .jn:hover{
+    color: rgb(85, 114, 109);
+  }
+
+
+#dialog4 {
+    background-color:rgb(220, 229, 227);
+    border:5px solid rgb(158, 183, 179);
+    height:490px;
+    left:50%;
+    margin:-400px 0 0 -200px;
+    padding:1px;
+    position:fixed !important; /* 浮動對話方塊 */
+    position:absolute;
+    top:50%;
+    width:450px;
+    z-index:500;
+    border-radius:5px;
+    display:none;
+  }
+  #dialog4 p {
+    margin:0 0 12px;
+    height:24px;
+    line-height:24px;
+  }
+  #dialog4 p.close {
+    text-align:right;
+    padding-right:10px;
+  }
+  #dialog4 p.close a {
+    color:rgb(89, 114, 136);
+    text-decoration:none;
+  }

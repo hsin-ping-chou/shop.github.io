@@ -1,0 +1,60 @@
+   #counter{
+    display: inline-block;
+    float: left;
+    width: 150px;
+    height: 100px;
+    /*background: blue;*/
+    z-index: 100px;
+    margin-top: 72.5%;
+    margin-left: -55px;
+    display: none;
+   }
+   .counterinner{
+    position: absolute;margin-left: -123px;
+    width: 120px;
+    height: 70px;
+   /* background: white;*/
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 15pt;
+   }
+   #bo{
+    cursor: pointer;
+   }
+   .dropbtn {
+    width: 130px;
+   }
+
+   .dropbtn:hover, .dropbtn:focus {
+    background-color: none;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    margin-left: -15px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 130px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown a:hover {background-color: #f1f1f1}
+
+  .show {display:block;}
+
+
